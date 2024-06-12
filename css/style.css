@@ -1,0 +1,534 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/* Cabeçalho */
+#cabecalho {
+    background-color: black;
+    position: sticky;
+}
+
+#cabecalho img {
+    min-width: 100%;
+}
+
+.container {
+    margin: auto;
+    max-width: 100%;
+}
+
+.container div {
+    padding: 50px;
+    max-width: 100%;
+}
+
+#cabecalho .container {
+    display: flex;
+    max-width: 100%;
+    border: #ff002a 4px solid;
+    justify-content: center;
+}
+
+#cabecalho #menu a {
+    margin: 0 20px 0 20px;
+    font-size: 24px;
+    padding: 15px;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+#cabecalho #menu a:hover {
+    color: #ff002a;
+    transition: all 0.5s linear;
+}
+
+#cabecalho #menu li {
+    list-style: none;
+}
+
+#cabecalho #menu ul {
+    display: flex;
+}
+
+
+#conteudo .divisoria {
+    min-width: 100%;
+}
+
+#conteudo {
+    font-size: 26px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* ---Inicio--- */
+/* LEMBRAR DE COLOCAR UM FUNDO OU EFEITOS E IMAGENS */
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.inicio div p {
+    line-height: 30px;
+}
+
+.inicio div figure {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.inicio div img {
+    min-width: 50%;
+    max-width: 100%;
+    border: black outset 3px;
+    width: 800px;
+}
+
+/* ---Niveis--- */
+/* LEMBRAR DE COLOCAR OS FUNDOS DE CADA CAMADA!!!!!
+biblioteca de imagens e efeitozin quando passar o mouse */
+
+.niveis div .divisoria {
+    border: 0px transparent;
+}
+
+.niveis div {
+    padding: 0px;
+}
+
+.niveis div img {
+    width: 128px;
+    max-width: 100%;
+}
+
+.niveis div a:hover {
+    border: 1px solid;
+    border-color: white;
+    transition: all 0.2s linear;
+}
+
+
+.niveis #preludio ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.niveis #preludio h1 {
+    border-top: #ff002a solid 30px;
+}
+
+.niveis div ul {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px;
+}
+
+.niveis div h1 {
+    background-color: #ff002a;
+    color: black;
+}
+
+.niveis div h3 {
+    background-color: #ff002a;
+    border-bottom: 20px solid #ff002a;
+    color: black;
+}
+
+.niveis div h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.niveis div ul h4 {
+    background-color: transparent;
+    display: flex;
+    margin: auto;
+}
+
+.niveis div #ultima-cam ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.niveis .fotos a {
+    transition: all 0.2s linear;
+}
+
+.niveis .camada {
+    transition: all 0.5s linear;
+}
+
+.niveis .camada:hover {
+    padding: 120px;
+    transition: all 0.5s linear;
+}
+
+.niveis {
+    background-repeat: no-repeat;
+}
+
+.niveis .fundo {
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    transition: all 0.3s 0.2s ease-in-out;
+}
+
+.niveis .fundo:hover {
+    background-size: 100%;
+}
+
+.niveis .pre {
+    background-image: url(../images/fundos/camadas/0camada.png);
+}
+
+.niveis .um {
+    background-image: url(../images/fundos/camadas/1camada.png);
+    padding-bottom: 10px;
+}
+
+.niveis .dois {
+    background-image: url(../images/fundos/camadas/2camada.png);
+    padding-bottom: 10px;
+}
+
+.niveis .tres {
+    background-image: url(../images/fundos/camadas/3camada.png);
+
+}
+
+.niveis .quatro {
+    background-image: url(../images/fundos/camadas/4camada.png);
+    padding-bottom: 10px;
+}
+
+.niveis .cinco {
+    background-image: url(../images/fundos/camadas/5camada.png);
+    padding-bottom: 10px;
+}
+
+.niveis .seis {
+    background-image: url(../images/fundos/camadas/6camada.png);
+}
+
+.niveis .sete {
+    background-image: url(../images/fundos/camadas/7camada.png);
+    padding-bottom: 10px;
+}
+
+
+
+/* ---Inimigos--- */
+
+.inimigos div ul figure {
+    width: 128px;
+}
+
+.inimigos div img:hover {
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+
+.inimigos div ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+
+
+/* --Chefões-- */
+
+.chefoes{
+    background-color: none;
+}
+
+.chefoes div p {
+    font-size: medium;
+    text-align: justify;
+    padding: 1%;
+    margin-top: 10px;
+}
+
+.chefoes div h1 {
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.chefoes div ul {
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+    
+}
+
+.chefoes .boss{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 130%;
+    transition: all 0.3s ease-in-out;
+}
+
+.chefoes .boss:hover{
+    background-size: 120%;
+}
+
+.chefoes div #v2 {
+    width: 100%;
+}
+
+.chefoes #v2fundo {
+    background-image: url(../images/chefoes/v2fundo.png);
+    background-repeat: no-repeat;
+}
+
+
+.chefoes .gabriel {
+    background-image: url(../images/chefoes/gabrielfundo.png);
+    background-repeat: no-repeat;
+}
+
+.chefoes #minos {
+    background-image: url(../images/chefoes/minosfundo.png);
+    background-repeat: no-repeat;
+}
+
+.chefoes #leviata {
+    background-image: url(../images/chefoes/leviatafundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.chefoes .minos {
+    margin-left: 450px;
+}
+
+.chefoes .leviata {
+    margin-left: 470px;
+}
+
+.chefoes #minotauro {
+    width: 80%;
+}
+
+.chefoes .minotauro {
+    text-decoration: line-through;
+    color: rgb(255, 37, 37);
+}
+
+.chefoes .minot{
+    background-image: url(../images/chefoes/minotaurofundo.png);
+    background-repeat: no-repeat;
+}
+
+.chefoes #escavador {
+    background-image: url(../images/chefoes/gigantefundo.png);
+    background-repeat: no-repeat;
+}
+
+.chefoes .escavador {
+    margin-left: 450px;
+}
+
+.chefoes .console{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-bottom: 80px;
+    border: yellow 2px solid;
+}
+
+/* --Armas-- */
+
+.armas .videos {
+    justify-content: center;
+    float: right;
+    width: 800px;
+    border: 5px solid;
+    border-radius: 5px;
+}
+
+.armas div {
+    padding-top: 0;
+}
+
+.armas .azul {
+    border-color: rgb(0, 255, 242);
+    color: rgb(0, 255, 242);
+}
+
+.armas .verde {
+    border-color: rgb(42, 253, 0);
+    color: rgb(42, 253, 0);
+}
+
+.armas .vermelho {
+    border-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+}
+
+.armas h4 {
+    padding-left: 25%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.armas h1 {
+    background-color: #ff002a;
+    color: black;
+    padding: 20px;
+}
+
+.armas figure {
+    width: 300px;
+    display: flex;
+    float: left;
+    rotate: 270deg;
+    margin-top: 14%;
+    transition: transform 0.3s;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.armas figure:hover {
+    transform: scale(1.2);
+    transition: all 0.4s linear;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.armas ul {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-position: center;
+    background-size: 110%;
+    transition: all 0.8s ease-in-out;
+}
+
+.armas ul:hover {
+    background-size: 100%;
+}
+
+/* --Créditos-- */
+
+.creditos figure {
+    width: 300px;
+    float: left;
+    display: inline-flex;
+    margin-left: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.creditos img{
+    border-radius: 10px;
+}
+
+.creditos figure:hover {
+    transform: scale(1.1);
+    padding: 5px;
+}
+
+.creditos .meio {
+    float: none;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    margin-left: 37%;
+    margin-right: 37%;
+}
+
+.creditos .meiop {
+    text-align: center;
+    margin-left: 0px;
+}
+
+.creditos .dev{
+    padding: 20px;
+}
+
+.creditos ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.creditos h4 {
+    margin: 0;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.creditos h1 {
+    background-color: #ff002a;
+    color: black;
+    padding: 10px;
+}
+
+.creditos div{
+    padding: 50px;
+}
+
+.creditos p {
+    padding-top: 15px;
+    display: inline-flex;
+}
+
+.creditos iframe {
+    float: right;
+    width: 600px;
+    height: 400px;
+}
+
+.creditos .imagem {
+    float: right;
+    width: 600px;
+    height: 400px;
+}
+
+/* Rodapé */
+
+#rodape{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+#rodape a{
+    color: white;
+    text-decoration: none;
+}
+
+#rodape a:hover{
+    color: #06C;
+    text-decoration: underline;
+}
